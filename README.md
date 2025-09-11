@@ -1,8 +1,8 @@
-# 🎤 Speech-to-Text with Wav2Vec2 & Hugging Face
+#  Speech-to-Text with Wav2Vec2 & Hugging Face
 
 A powerful speech recognition system built with Facebook's Wav2Vec2 model and Hugging Face Transformers, capable of converting audio recordings into accurate text transcriptions.
 
-## ✨ Features
+##  Features
 
 - **Real-time Speech Recognition**: Convert audio files to text with high accuracy
 - **Pre-trained Models**: Uses Facebook's `wav2vec2-base-960h` model for optimal performance
@@ -10,7 +10,7 @@ A powerful speech recognition system built with Facebook's Wav2Vec2 model and Hu
 - **Easy Integration**: Simple setup with Hugging Face Transformers pipeline
 - **Multiple Format Support**: Works with various audio formats (.wav, .mp3, etc.)
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -73,7 +73,7 @@ Speech_Text_HuggingFace/
 3. **Speech Processing**: Wav2Vec2 model for feature extraction
 4. **Text Generation**: CTC (Connectionist Temporal Classification) for transcription
 
-## 🎯 Use Cases
+## Use Cases
 
 - **Meeting Transcription**: Convert recorded meetings to searchable text
 - **Podcast Processing**: Generate transcripts for audio content
@@ -81,7 +81,7 @@ Speech_Text_HuggingFace/
 - **Voice Notes**: Convert voice memos to text format
 - **Language Learning**: Practice pronunciation with feedback
 
-## 🛠️ Technical Requirements
+## 🛠 Technical Requirements
 
 - **Python**: 3.7+
 - **PyTorch**: 1.9.0+
@@ -89,14 +89,14 @@ Speech_Text_HuggingFace/
 - **Torchaudio**: 0.9.0+
 - **Google Colab**: Recommended environment
 
-## 📊 Performance
+##  Performance
 
 - **Accuracy**: ~95% on clear English speech
 - **Processing Speed**: Real-time on GPU, near real-time on CPU
 - **Memory Usage**: ~2GB for base model
 - **Supported Languages**: Primarily English (model-dependent)
 
-## 🔍 Advanced Features
+## Advanced Features
 
 ### Custom Audio Recording
 ```python
@@ -120,7 +120,7 @@ def transcribe_batch(audio_files):
     return transcriptions
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/new-feature`)
@@ -128,18 +128,18 @@ def transcribe_batch(audio_files):
 4. Push to the branch (`git push origin feature/new-feature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Facebook AI Research** for the Wav2Vec2 model
 - **Hugging Face** for the Transformers library
 - **LibriSpeech** dataset contributors
 - **Google Colab** for providing the development environment
 
-## 📧 Contact
+##  Contact
 
 **Surabhi** - [GitHub Profile](https://github.com/Surabhi6300)
 
