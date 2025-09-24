@@ -20,28 +20,6 @@ pip install torchaudio
 pip install torch
 ```
 
-### Basic Usage
-
-```python
-import torch
-import torchaudio
-from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
-
-# Load pre-trained model and processor
-processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-base-960h")
-model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-base-960h")
-
-# Load audio file
-waveform, sample_rate = torchaudio.load("your_audio.wav")
-
-# Process audio
-input_values = processor(waveform.squeeze().numpy(), sampling_rate=16000, return_tensors="pt").input_values
-
-# Perform inference
-with torch.no_grad():
-    logits = model(input_values).logits
-    predicted_ids = torch.argmax(logits, dim=-1)
-
 # Decode to text
 transcription = processor.batch_decode(predicted_ids)[0]
 print("Transcription:", transcription)
