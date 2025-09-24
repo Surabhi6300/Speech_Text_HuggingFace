@@ -21,6 +21,7 @@ pip install torch
 ```
 
 # Decode to text
+```
 transcription = processor.batch_decode(predicted_ids)[0]
 print("Transcription:", transcription)
 ```
